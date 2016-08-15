@@ -103,7 +103,7 @@ bool FbullCowGame::checkIsogram(FString s) {
 			LetterSeen[letter] = true;
 		}
 	}
-	// TODO if an isogram is valid but isnt the right write it to a text file
+	// TODO if an isogram is valid but isnt the right answer write it to a text file
 	return true;
 }
 
