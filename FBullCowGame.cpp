@@ -83,6 +83,7 @@ FBullCowCount FbullCowGame::SumitValidGuess(FString guess)
 void FbullCowGame::reset()
 {	
 	bGameIsWon = false;
+	// TODO randomize the choosing of an isogram of a list of isograms
 	const FString HIDDEN_WORD = "south"; // this MUST be an isogram(word with non-repeating characters) , else game will not function!!
 	hiddenWord = HIDDEN_WORD;
 	currTry = 1;
@@ -102,6 +103,7 @@ bool FbullCowGame::checkIsogram(FString s) {
 			LetterSeen[letter] = true;
 		}
 	}
+	// TODO if an isogram is valid but isnt the right write it to a text file
 	return true;
 }
 
